@@ -1,0 +1,39 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f4f4f4;
+}
+.hero {
+  background: #003366;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+.slogan {
+  font-size: 1.2rem;
+}
+.main-nav {
+  margin-top: 1rem;
+}
+.main-nav a {
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+}
+main {
+  padding: 2rem;
+}
+section {
+  margin-bottom: 2rem;
+}
+footer {
+  background: #003366;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+footer a {
+  color: #f4f4f4;
+  text-decoration: none;
+}
