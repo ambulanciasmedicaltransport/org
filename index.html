@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Ambulancias Medical Transport Sas®</title>
+    <link rel="stylesheet" href="style.css"/>
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header class="hero">
+        <img src="logo.png" alt="Logo" class="logo" />
+        <h1>Ambulancias Medical Transport Sas®</h1>
+        <p class="slogan">Donde cada vida importa &amp; Cada segundo cuenta</p>
+        <button onclick="scrollToSection('conocenos')">Conócenos</button>
+    </header>
+
+    <nav class="navbar">
+        <button onclick="toggleSection('objetivo')">Objetivo</button>
+        <button onclick="toggleSection('servicios')">Servicios</button>
+        <button onclick="toggleSection('contacto')">Contacto</button>
+        <button onclick="toggleSection('redes')">Redes Sociales</button>
+        <button onclick="toggleSearch()">🔍</button>
+    </nav>
+
+    <div class="content">
+        <section id="conocenos" class="section hidden">
+            <h2>Conócenos</h2>
+            <h3>Misión</h3>
+            <p>Brindar servicios de transporte asistencial oportuno y seguro, centrado en el bienestar de cada paciente.</p>
+            <h3>Visión</h3>
+            <p>Ser líderes regionales en atención prehospitalaria de calidad con innovación y compromiso humano.</p>
+            <h3>Objetivo Social</h3>
+            <p>Ofrecer soluciones integrales de transporte médico que contribuyan a mejorar la salud de la comunidad.</p>
+            <h3>Nuestra Historia</h3>
+            <p>Ambulancias Medical Transport Sas® nació con la vocación de salvar vidas, creciendo con profesionalismo y pasión por servir.</p>
+        </section>
+
+        <section id="objetivo" class="section hidden">
+            <h2>Objetivo</h2>
+            <p>Brindar atención prehospitalaria integral y humanizada a través de servicios de transporte médico eficiente.</p>
+        </section>
+
+        <section id="servicios" class="section hidden">
+            <h2>Servicios</h2>
+            <ul>
+                <li>Traslado asistencial Básico</li>
+                <li>Traslado asistencial Medicalizado</li>
+                <li>Vehículos para movilidad Reducida</li>
+                <li>Médico a Domicilio</li>
+                <li>Home Care</li>
+                <li>Asistencia para eventos</li>
+                <li>Asistencia zona protegida</li>
+            </ul>
+            <p><strong>Aceptamos todos los medios de pago.</strong></p>
+        </section>
+
+        <section id="contacto" class="section hidden">
+            <h2>Contacto</h2>
+            <p>Email: ambulanciasmedicaltransport@gmail.com</p>
+            <p>Dirección: Cll 44n 2e30 barrio Vipasa, Cali - Valle del Cauca - Colombia</p>
+            <p>Teléfono: 3042035070</p>
+        </section>
+
+        <section id="redes" class="section hidden">
+            <h2>Redes Sociales</h2>
+            <div class="social-icons">
+                <a href="https://facebook.com/ambulanciasmedicaltransport" target="_blank">📘 Facebook</a>
+                <a href="https://instagram.com/ambulanciasmedicaltransport" target="_blank">📸 Instagram</a>
+                <a href="https://wa.me/573042035070" target="_blank">💬 WhatsApp</a>
+                <a href="https://tiktok.com/@ambulanciasmedicaltransport" target="_blank">🎵 TikTok</a>
+            </div>
+        </section>
+
+        <section class="ads">
+            <h2>🟨 Anúnciate aquí – Espacio disponible para publicidad pagada</h2>
+        </section>
+    </div>
+
+    <div id="searchBox" class="search-box hidden">
+        <input type="text" placeholder="Buscar..." />
+        <button onclick="toggleSearch()">Cerrar</button>
+    </div>
+</body>
+</html>

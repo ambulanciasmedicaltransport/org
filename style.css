@@ -1,0 +1,70 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f4f4f4;
+    color: #333;
+}
+.hero {
+    background: #003366;
+    padding: 60px 20px;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+.logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 60px;
+}
+.slogan {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    background-color: #004080;
+    padding: 10px;
+}
+.navbar button {
+    background-color: #ffffff;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+.section {
+    padding: 20px;
+    background: white;
+    margin: 10px;
+    border-radius: 8px;
+}
+.hidden {
+    display: none;
+}
+.social-icons a {
+    display: inline-block;
+    margin: 5px;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+.ads {
+    padding: 20px;
+    background-color: #ffffcc;
+    margin: 10px;
+    border-radius: 8px;
+    text-align: center;
+}
+.search-box {
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    padding: 20px;
+    border: 2px solid #000;
+    z-index: 1000;
+}
