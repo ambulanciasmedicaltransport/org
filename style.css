@@ -15,7 +15,7 @@
     }
 
     .hero {
-      background: url("img/fondo.jpeg") center/cover no-repeat;
+      background: url("img/img.2.jpeg") center/cover repeat;
       height: 100vh;
       color: white;
       display: flex;
