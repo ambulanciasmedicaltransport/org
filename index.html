@@ -2,183 +2,22 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ambulancias Medical Transport Sas®</title>
+  <link rel="stylesheet" href="style.css" />
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body, html {
-      font-family: Arial, sans-serif;
-      height: 100%;
-      width: 100%;
-    }
-
-    header {
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      background-color: rgba(0, 0, 0, 0.7);
-      color: white;
-      padding: 10px 20px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      z-index: 999;
-    }
-
-    header img {
-      height: 40px;
-      margin-right: 10px;
-    }
-
-    header .brand {
-      display: flex;
-      align-items: center;
-      font-size: 16px;
-      font-weight: bold;
-    }
-
-    nav a {
-      color: white;
-      margin-left: 20px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    section.hero {
-      background: url("img/img.2.jpeg") no-repeat center center/cover;
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      color: white;
-      text-align: center;
-      padding-top: 60px;
-    }
-
-    section.hero h2 {
-      font-size: 32px;
-      text-shadow: 2px 2px 6px #000;
-    }
-
-    section {
-      padding: 60px 20px;
-    }
-
-    section h3 {
-      cursor: pointer;
-      font-size: 24px;
-      margin-bottom: 10px;
-    }
-
-    section div.content {
-      display: none;
-      margin-top: 10px;
-    }
-
-    .contact-grid {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 2rem;
-    }
-
-    .contact-info {
-      flex: 1;
-    }
-
-    .contact-form {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-    }
-
-    .contact-form input,
-    .contact-form textarea {
-      padding: 0.8rem;
-      font-size: 1rem;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-    }
-
-    .contact-form button {
-      padding: 0.8rem;
-      background: #004080;
-      color: white;
-      border: none;
-      font-weight: bold;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-
-    .social-icons a {
-      margin-right: 1rem;
-      font-size: 1.5rem;
-      color: #004080;
-    }
-
-    .publicidad {
-      background: #f4f4f4;
-      text-align: center;
-      padding: 3rem 1rem;
-    }
-
-    footer {
-      background: #004080;
-      color: white;
-      text-align: center;
-      padding: 2rem 1rem;
-    }
-
-    .payment-icons i {
-      margin: 0 0.5rem;
-      font-size: 1.5rem;
-    }
-
-    @media (max-width: 768px) {
-      header {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-      nav a {
-        margin: 5px 0;
-      }
-      section.hero h2 {
-        font-size: 24px;
-      }
-      header .brand {
-        font-size: 14px;
-      }
-      .contact-grid {
-        flex-direction: column;
-      }
-    }
-  </style>
-  <script>
-    function toggle(id) {
-      const el = document.getElementById(id);
-      el.style.display = el.style.display === "none" || el.style.display === "" ? "block" : "none";
-    }
-  </script>
 </head>
 <body>
-
   <header>
     <div class="brand">
       <img src="img/logo.png" alt="logo" />
       Ambulancias Medical Transport Sas
     </div>
     <nav>
-      <a href="#conocenos">Conócenos</a>
-      <a href="#servicios">Servicios</a>
-      <a href="#contacto">Contacto</a>
+      <a href="#">Inicio</a>
+      <a href="#conocenos" target="_blank">Conócenos</a>
+      <a href="#servicios" target="_blank">Servicios</a>
+      <a href="#contacto" target="_blank">Contacto</a>
     </nav>
   </header>
 
@@ -186,13 +25,32 @@
     <h2>Donde cada vida importa & cada segundo cuenta</h2>
   </section>
 
+  <section class="galeria">
+    <h3>Galería</h3>
+    <div class="galeria-container">
+      <img src="img/img.1.jpeg" alt="Foto 1">
+      <img src="img/img.2.jpeg" alt="Foto 2">
+      <img src="img/img.3.jpeg" alt="Foto 3">
+      <img src="img/img.4.jpeg" alt="Foto 4">
+      <img src="img/img.5.jpeg" alt="Foto 5">
+    </div>
+  </section>
+
+  <section class="video-section">
+    <h2>Campaña de Concientización</h2>
+    <video width="100%" controls poster="img/img.2.jpeg">
+      <source src="video/Concientizacion.mp4" type="video/mp4">
+      Tu navegador no soporta videos HTML5.
+    </video>
+  </section>
+
   <section id="conocenos">
     <h3 onclick="toggle('info1')">Conócenos ▼</h3>
     <div id="info1" class="content">
-      <p><strong>Misión:</strong> Brindar transporte médico de emergencia con un nivel de excelencia y humanidad sin igual, garantizando que no importe el lugar ni la condición, cada persona reciba atención médica inmediata. Transformamos cada emergencia en una oportunidad de vida, derribando los muros de desigualdad y llevando la salud a donde más se necesita.</p>
-      <p><strong>Visión:</strong> Ser la fuerza transformadora que redefine el acceso a la salud en el país, construyendo una red de emergencias donde cada vida importa, cada segundo es crucial, y ninguna barrera puede detener nuestra misión de salvar.</p>
+      <p><strong>Misión:</strong> Brindar un servicio humanizado y seguro de traslado asistencial.</p>
+      <p><strong>Visión:</strong> Ser la mejor empresa de ambulancias del suroccidente colombiano.</p>
       <p><strong>Historia:</strong> Iniciamos con una misión clara: salvar vidas con eficiencia.</p>
-      <p><strong>Objetivo Social:</strong> Crear un cambio radical en el sistema de salud, llevando transporte médico de emergencia a todas las comunidades, especialmente a las más vulnerables, y promoviendo la equidad sanitaria mediante la mejora del acceso a la salud en cada rincón del país, sin distinción alguna.</p>
+      <p><strong>Objetivo Social:</strong> Brindar atención prehospitalaria con calidad y calidez, contribuyendo al sistema de salud.</p>
     </div>
   </section>
 
@@ -235,7 +93,7 @@
   </section>
 
   <section class="publicidad">
-    <a href="https://www.facebook.com/business/m/ads-manager">Espacio para publicidad</a>
+    <a href="https://www.facebook.com/business/m/ads-manager" target="_blank">Espacio para publicidad</a>
     <p>Promociona tu marca aquí</p>
   </section>
 
@@ -250,5 +108,11 @@
     </div>
   </footer>
 
+  <script>
+    function toggle(id) {
+      const el = document.getElementById(id);
+      el.style.display = el.style.display === "block" ? "none" : "block";
+    }
+  </script>
 </body>
 </html>
