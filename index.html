@@ -1,244 +1,122 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ambulancias Medical Transport Sas®</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <img src="img/logo.png" alt="logo" />
+      Ambulancias Medical Transport Sas
+    </div>
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#conocenos">Conócenos</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
 
-body, html {
-  font-family: Arial, sans-serif;
-  height: 100%;
-  width: 100%;
-  background: url("img/img.2.jpeg") no-repeat center center fixed;
-  background-size: cover;
-  color: white;
-}
+  <section class="hero" id="inicio">
+    <h2>Donde cada vida importa & cada segundo cuenta</h2>
+  </section>
 
-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  background-color: rgba(0, 0, 0, 0.7);
-  color: white;
-  padding: 10px 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  z-index: 999;
-}
+  <section id="conocenos">
+    <h3 onclick="toggle('info1')">Conócenos ▼</h3>
+    <div id="info1" class="content">
+      <p><strong>Misión:</strong> Brindar un servicio humanizado y seguro de traslado asistencial.</p>
+      <p><strong>Visión:</strong> Ser la mejor empresa de ambulancias del suroccidente colombiano.</p>
+      <p><strong>Historia:</strong> Iniciamos con una misión clara: salvar vidas con eficiencia.</p>
+      <p><strong>Objetivo Social:</strong> Brindar atención prehospitalaria con calidad y calidez, contribuyendo al sistema de salud.</p>
+    </div>
+  </section>
 
-header img {
-  height: 40px;
-  margin-right: 10px;
-}
+  <section id="servicios">
+    <h3 onclick="toggle('info2')">Servicios ▼</h3>
+    <div id="info2" class="content">
+      <ul>
+        <li>🚑 Traslado asistencial básico</li>
+        <li>🚨 Traslado medicalizado</li>
+        <li>♿ Movilidad reducida</li>
+        <li>🏥 Médico a domicilio</li>
+        <li>🩺 Home Care</li>
+        <li>🎉 Eventos</li>
+        <li>🛡️ Zona protegida</li>
+      </ul>
+    </div>
+  </section>
 
-header .brand {
-  display: flex;
-  align-items: center;
-  font-size: 16px;
-  font-weight: bold;
-}
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <p><strong>Dirección:</strong> Cll 44n 2e30 barrio Vipasa, Cali - Valle del Cauca - Colombia</p>
+        <p><strong>Teléfono:</strong> 3042035070</p>
+        <p><strong>Email:</strong> ambulanciasmedicaltransport@gmail.com</p>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-whatsapp"></i></a>
+          <a href="#"><i class="fab fa-tiktok"></i></a>
+        </div>
+      </div>
+      <form action="https://formspree.io/f/mwkgbgdr" method="POST" class="contact-form">
+        <input type="text" name="name" placeholder="Nombre" required>
+        <input type="email" name="email" placeholder="Correo electrónico" required>
+        <textarea name="message" placeholder="Mensaje" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+  </section>
 
-nav a {
-  color: white;
-  margin-left: 20px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: color 0.3s;
-}
+  <section class="video-section">
+    <h2>Campaña de Concientización</h2>
+    <div class="video-container">
+      <iframe 
+        src="https://www.youtube.com/embed/_MNEP0DKLRA"
+        title="Video de Concientización"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+    </div>
+  </section>
 
-nav a:hover {
-  color: #00bfff;
-}
+  <section class="publicidad">
+    <a href="https://www.facebook.com/business/m/ads-manager">Espacio para publicidad</a>
+    <p>Promociona tu marca aquí</p>
+  </section>
 
-section.hero {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
-  padding-top: 60px;
-}
+  <section class="galeria">
+    <h2>Galería</h2>
+    <div class="galeria-container">
+      <img src="img/gal1.jpg" alt="gal1">
+      <img src="img/gal2.jpg" alt="gal2">
+      <img src="img/gal3.jpg" alt="gal3">
+    </div>
+  </section>
 
-section.hero h2 {
-  font-size: 36px;
-  text-shadow: 2px 2px 6px #000;
-}
+  <footer>
+    <p>© 2025 Ambulancias Medical Transport Sas®</p>
+    <p>Aceptamos todos los medios de pago</p>
+    <div class="payment-icons">
+      <i class="fab fa-cc-visa"></i>
+      <i class="fab fa-cc-mastercard"></i>
+      <i class="fab fa-cc-amex"></i>
+      <i class="fab fa-cc-paypal"></i>
+    </div>
+  </footer>
 
-section {
-  padding: 60px 20px;
-  text-align: center;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-section h3 {
-  cursor: pointer;
-  font-size: 28px;
-  margin-bottom: 20px;
-  color: #00bfff;
-}
-
-section div.content {
-  display: none;
-  margin-top: 10px;
-  font-size: 18px;
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-}
-
-section div.content p strong {
-  display: block;
-  font-size: 22px;
-  color: #00bfff;
-  margin-top: 1.2rem;
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-  font-size: 18px;
-  line-height: 1.8;
-}
-
-.contact-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  justify-content: center;
-}
-
-.contact-info, .contact-form {
-  flex: 1;
-  min-width: 300px;
-}
-
-.social-icons a {
-  margin-right: 1rem;
-  font-size: 1.5rem;
-  color: #00bfff;
-}
-
-.contact-form input,
-.contact-form textarea {
-  padding: 0.8rem;
-  font-size: 1rem;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  width: 100%;
-  color: #333;
-}
-
-.contact-form button {
-  padding: 0.8rem;
-  background: #00bfff;
-  color: white;
-  border: none;
-  font-weight: bold;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background 0.3s;
-}
-
-.contact-form button:hover {
-  background: #0099cc;
-}
-
-.publicidad {
-  background: rgba(255, 255, 255, 0.85);
-  text-align: center;
-  padding: 3rem 1rem;
-  color: #333;
-}
-
-footer {
-  background: rgba(0, 0, 0, 0.7);
-  color: white;
-  text-align: center;
-  padding: 2rem 1rem;
-}
-
-.payment-icons i {
-  margin: 0 0.5rem;
-  font-size: 1.5rem;
-}
-
-.galeria {
-  padding: 2rem;
-  background-color: rgba(255,255,255,0.85);
-  text-align: center;
-  color: #333;
-}
-
-.galeria-container {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
-.galeria-container img {
-  height: 120px;
-  width: auto;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
-  transition: transform 0.3s;
-}
-
-.galeria-container img:hover {
-  transform: scale(1.1);
-}
-
-.video-section {
-  padding: 4rem 2rem;
-  background-color: rgba(255, 255, 255, 0.85);
-  text-align: center;
-  color: #333;
-}
-
-.video-section h2 {
-  font-size: 2rem;
-  color: #004080;
-  margin-bottom: 1rem;
-}
-
-.video-container {
-  position: relative;
-  padding-bottom: 56.25%;
-  height: 0;
-  overflow: hidden;
-  max-width: 100%;
-  background: #000;
-  border-radius: 10px;
-  box-shadow: 0 0 20px rgba(0,0,0,0.3);
-}
-
-.video-container iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: none;
-}
-
-@media (max-width: 768px) {
-  header {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  nav a {
-    margin: 5px 0;
-  }
-
-  section.hero h2 {
-    font-size: 24px;
-  }
-
-  header .brand {
-    font-size: 14px;
-  }
-}
+  <script>
+    function toggle(id) {
+      const element = document.getElementById(id);
+      element.style.display = (element.style.display === 'block') ? 'none' : 'block';
+    }
+  </script>
+</body>
+</html>
