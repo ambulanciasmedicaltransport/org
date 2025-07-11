@@ -5,34 +5,54 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ambulancias Medical Transport Sas®</title>
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <script>
+    function toggle(id) {
+      const content = document.getElementById(id);
+      const all = document.querySelectorAll('.content');
+      all.forEach(el => { if (el !== content) el.style.display = 'none'; });
+      content.style.display = content.style.display === 'block' ? 'none' : 'block';
+    }
+    function toggleGallery() {
+      const gallery = document.querySelector('.galeria-container');
+      gallery.style.display = gallery.style.display === 'flex' ? 'none' : 'flex';
+    }
+  </script>
+  <style>
+    @media (max-width: 768px) {
+      nav a {
+        display: block;
+        margin: 10px 0;
+      }
+    }
+  </style>
 </head>
 <body>
   <header>
     <div class="brand">
-      <img src="img/logo.png" alt="logo" />
-      Ambulancias Medical Transport Sas
+      <img src="img/logo.png" alt="logo">
+      Ambulancias Medical Transport Sas®
     </div>
     <nav>
-      <a href="#inicio">Inicio</a>
+      <a href="#">Inicio</a>
       <a href="#conocenos">Conócenos</a>
       <a href="#servicios">Servicios</a>
       <a href="#contacto">Contacto</a>
+      <a href="#galeria" onclick="toggleGallery()">Galería</a>
     </nav>
   </header>
 
-  <section class="hero" id="inicio">
+  <section class="hero">
     <h2>Donde cada vida importa & cada segundo cuenta</h2>
   </section>
 
   <section id="conocenos">
     <h3 onclick="toggle('info1')">Conócenos ▼</h3>
     <div id="info1" class="content">
-      <p><strong>Misión:</strong> "Brindar transporte médico de emergencia con un nivel de excelencia y humanidad sin igual, garantizando que no importe el lugar ni la condición, cada persona reciba atención médica inmediata. Transformamos cada emergencia en una oportunidad de vida, derribando los muros de desigualdad y llevando la salud a donde más se necesita".</p>
-      <p><strong>Visión:</strong> "Ser la fuerza transformadora que redefine el acceso a la salud en el país, construyendo una red de emergencias donde cada vida importa, cada segundo es crucial, y ninguna barrera puede detener nuestra misión de salvar".</p>
-      <p><strong>Historia:</strong> "Iniciamos con una misión clara: salvar vidas con eficiencia".</p>
-      <p><strong>Objetivo Social:</strong> "Crear un cambio radical en el sistema de salud, llevando transporte médico de emergencia a todas las comunidades, especialmente a las más vulnerables, y promoviendo la equidad sanitaria mediante la mejora del acceso a la salud en cada rincón del país, sin distinción alguna"..</p>
+      <p><strong>Misión:</strong> Brindar un servicio humanizado y seguro de traslado asistencial.</p>
+      <p><strong>Visión:</strong> Ser la mejor empresa de ambulancias del suroccidente colombiano.</p>
+      <p><strong>Historia:</strong> Iniciamos con una misión clara: salvar vidas con eficiencia.</p>
+      <p><strong>Objetivo Social:</strong> Brindar atención prehospitalaria con calidad y calidez, contribuyendo al sistema de salud.</p>
     </div>
   </section>
 
@@ -52,18 +72,12 @@
   </section>
 
   <section id="contacto">
-    <h2>Contacto</h2>
-    <div class="contact-grid">
+    <h3 onclick="toggle('info3')">Contacto ▼</h3>
+    <div id="info3" class="content contact-grid">
       <div class="contact-info">
         <p><strong>Dirección:</strong> Cll 44n 2e30 barrio Vipasa, Cali - Valle del Cauca - Colombia</p>
         <p><strong>Teléfono:</strong> 3042035070</p>
         <p><strong>Email:</strong> ambulanciasmedicaltransport@gmail.com</p>
-        <div class="social-icons">
-          <a href="#"><i class="fab fa-facebook-f"></i></a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
-          <a href="#"><i class="fab fa-whatsapp"></i></a>
-          <a href="#"><i class="fab fa-tiktok"></i></a>
-        </div>
       </div>
       <form action="https://formspree.io/f/mwkgbgdr" method="POST" class="contact-form">
         <input type="text" name="name" placeholder="Nombre" required>
@@ -74,34 +88,36 @@
     </div>
   </section>
 
+  <section class="galeria" id="galeria">
+    <h2>Galería</h2>
+    <div class="galeria-container">
+      <img src="img/img.1.jpeg" alt="img1">
+      <img src="img/img.2.jpeg" alt="img2">
+      <img src="img/img.3.jpeg" alt="img3">
+      <img src="img/img.4.jpeg" alt="img4">
+      <img src="img/img.5.jpeg" alt="img5">
+    </div>
+  </section>
+
   <section class="video-section">
     <h2>Campaña de Concientización</h2>
-    <div class="video-container">
-      <iframe 
-        src="https://www.youtube.com/embed/_MNEP0DKLRA"
-        title="Video de Concientización"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen>
-      </iframe>
-    </div>
+    <iframe src="https://www.youtube.com/embed/_MNEP0DKLRA" frameborder="0" allowfullscreen></iframe>
   </section>
 
   <section class="publicidad">
-    <a href="https://www.facebook.com/business/m/ads-manager">Espacio para publicidad</a>
-    <p>Promociona tu marca aquí</p>
-  </section>
-
-  <section class="galeria">
-    <h2>Galería</h2>
-    <div class="galeria-container">
-      <img src="img/gal1.jpg" alt="gal1">
-      <img src="img/gal2.jpg" alt="gal2">
-      <img src="img/gal3.jpg" alt="gal3">
-    </div>
+    <h2>Publicidad</h2>
+    <p>Espacio para campañas educativas o promocionales</p>
+    <img src="img/publicidad-temporal.jpeg" alt="Publicidad educativa" class="banner-publicidad">
   </section>
 
   <footer>
+    <div class="social-icons">
+      <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://wa.me/573042035070" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      <a href="https://tiktok.com" target="_blank"><i class="fab fa-tiktok"></i></a>
+      <a href="https://youtube.com/@AmbulanciasMedicalTransport" target="_blank"><i class="fab fa-youtube"></i></a>
+    </div>
     <p>© 2025 Ambulancias Medical Transport Sas®</p>
     <p>Aceptamos todos los medios de pago</p>
     <div class="payment-icons">
@@ -111,12 +127,5 @@
       <i class="fab fa-cc-paypal"></i>
     </div>
   </footer>
-
-  <script>
-    function toggle(id) {
-      const element = document.getElementById(id);
-      element.style.display = (element.style.display === 'block') ? 'none' : 'block';
-    }
-  </script>
 </body>
 </html>
