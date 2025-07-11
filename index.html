@@ -4,64 +4,140 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ambulancias Medical Transport Sas®</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+body, html {
+  font-family: Arial, sans-serif;
+  height: 100%;
+  width: 100%;
+}
+    
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  fight: 0;
+  background-color: rgba(0; 0; 0; 0.7);
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 999;
+}
+
+    header img {
+      height: 40px;
+      margin-ringht: 10px;
+    }
+
+    header .brand {
+      display: flex;
+      align-items: center;
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    nav a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section.hero {
+      background: url('img/img.2.jpeg') no-repeat center center/cover;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flext-direction: column;
+      color: white;
+      text-align: center;
+      padding-top: 60px
+    }
+    section.hero h2 {
+      font-size: 32px;
+      text-shadow: 2px 2px 6px #000;
+    }
+    section {
+      padding: 60px 20px;
+    }
+    section h3 {
+      cursor: pointer;
+      font-size: 24px;
+      margin-bottom: 10px
+    }
+    section div.content {
+      display: none;
+      margin-top: 10px;
+    }
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      nav a {
+        margin: 5px 0;
+      }
+      section.hero h2 {
+        font-size: 24px;
+      }
+      header .brand {
+        font-size: 14px;
+      }
+    }
+    </style>
 </head>
-<body>
-  <header class="hero">
-    <nav class="navbar">
-      <div class="AMBULANCIAS MEDICAL TRANSPORT SAS®">
-        <img src="img/AMBULANCIAS MEDICAL TRANSPORT SAS®" alt="AMBULANCIAS MEDICAL TRANSPORT SAS®">
+  <body>
+
+    <header>
+    <div class="brand">
+        <img src="img/logo.png" alt="logo" />
+        Ambulancias Medical Transport Sas
       </div>
-      <ul class="nav-links">
-        <li><a href="#conocenos">Conócenos</a></li>
-        <li><a href="#servicios">Servicios</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-      </ul>
+      <nav>
+        <a href="#conocenos">Conócenos</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#contacto">Contacto</a>
     </nav>
-    <div class="hero-content">
-      <h2></h2>
-      <p>Donde cada vida importa & cada segundo cuenta</p>
-    </div>
-  </header>
-
-  <section id="conocenos" class="section">
-    <h2>Conócenos</h2>
-    <div class="content-grid">
-      <div>
-        <h3>Misión</h3>
-        <p>Proporcionar servicios de transporte asistencial oportuno, humano y seguro en beneficio de la comunidad.</p>
+    </header>
+    
+    <section class="hero">
+      <h2>Donde cada vida importa & cada segundo cuenta</h2>
+    </section>
+    
+  <section id="conocenos">
+    <h3 onclick="toggle('info1')">Conócenos ▼</h3>
+    <div id="info1" class="content">
+      <p><strong>Misión:</strong> Brindar un servicio humanizado y seguro de traslado asistencial.</p>
+      <p><strong>Vision:</strong> Ser la mejor empresa de ambulancias del suroccidente colombiano.</p>
+      <p><strong>Historia:</strong> Iniciamos con una mision clara: salvar vidas con eficiencia.</p>
+      <p><strong>Objetivo Social:</strong> Brindar atención prehospitalaria con calidad y calidez, contribuyendo al sistema de salud.</p>
       </div>
-      <div>
-        <h3>Visión</h3>
-        <p>Ser líderes en transporte asistencial terrestre en el suroccidente colombiano.</p>
-      </div>
-      <div>
-        <h3>Objetivo Social</h3>
-        <p>Brindar atención prehospitalaria con calidad y calidez, contribuyendo al sistema de salud.</p>
-      </div>
-      <div>
-        <h3>Historia</h3>
-        <p>Ambulancias Medical Transport Sas® nace con el propósito de salvar vidas y facilitar el acceso al cuidado médico inmediato en Cali y alrededores.</p>
-      </div>
-    </div>
   </section>
-
-  <section id="servicios" class="section">
-    <h2>Servicios</h2>
-    <ul class="services-list">
-      <li>Traslado asistencial básico</li>
-      <li>Traslado asistencial medicalizado</li>
-      <li>Vehículos para movilidad reducida</li>
-      <li>Médico a domicilio</li>
-      <li>Home Care</li>
-      <li>Asistencia para eventos</li>
-      <li>Asistencia zona protegida</li>
+    
+  <section id="servicios">
+    <h3 onclick="toggle('info2')">Servicios ▼</h3>
+    <div id="info2" class="content">
+    <ul>
+      <li>🚑 Traslado asistencial básico</li>
+        <li>🚨 Traslado medicalizado</li>
+        <li>♿ Movilidad reducida</li>
+        <li>🏥 Médico a domicilio</li>
+        <li>🩺 Home Care</li>
+        <li>🎉 Eventos</li>
+        <li>🛡️ Zona protegida</li>
     </ul>
+    </div>div>
   </section>
 
-  <section id="contacto" class="section">
+  <section id="contacto">
     <h2>Contacto</h2>
     <div class="contact-grid">
       <div class="contact-info">
